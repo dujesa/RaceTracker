@@ -16,7 +16,7 @@ const App = () => {
 
   const updateCompetitorPositions = (newPosition: Position) => {
     setCompetitorPositions((prev) => [
-      ...prev.filter((position) => position.id != newPosition.id),
+      ...prev.filter((position) => position.id !== newPosition.id),
       newPosition,
     ]);
   };
